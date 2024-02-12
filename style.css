@@ -1,0 +1,36 @@
+main,
+header,
+footer {
+  width: 900px;
+  margin: auto;
+}
+
+[data-theme="hawai"] {
+  --header-bg-hawai: orange;
+  header {
+    background-color: var(--header-bg-hawai);
+  }
+
+  main {
+    --footer-bg-hawai: rgb(0, 140, 255);
+    background-color: var(--footer-bg-hawai);
+  }
+
+  footer {
+    background-color: var(--header-bg-hawai);
+  }
+}
+
+[data-theme="dark"] {
+  --header-bg-dark: grey;
+  header {
+    background-color: var(--header-bg-dark);
+  }
+}
+
+[data-theme="light"] {
+  --header-bg-light: rgb(228, 219, 169);
+  header {
+    background-color: var(--header-bg-light);
+  }
+}
